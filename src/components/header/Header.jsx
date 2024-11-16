@@ -1,5 +1,6 @@
 import ReactLogo from "../../assets/react.svg";
 import NavItems from "../navitems/NavItems";
+import { Link } from "react-router-dom";
 
 const Header = props => {
   return (
@@ -24,6 +25,8 @@ const Header = props => {
       >
         DECREMENT
       </button>
+
+      <Link to="/books" className="px-[2rem] py-[0.3rem] border-2 rounded-sm bg-green-500 text-white hover:bg-transparent hover:text-green-500">Books</Link>
 
       <div className="flex items-center ">
         <img src={ReactLogo} alt="" className="w-[30px] h-[30px] mr-[10px]" />
